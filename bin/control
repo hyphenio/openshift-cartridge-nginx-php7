@@ -9,17 +9,17 @@ function start() {
 
     build_config
 
-    service php-fpm start
+    #service php-fpm start
     service nginx start
 }
 
 function stop() {
-   service php-fpm stop
+   #service php-fpm stop
    service nginx stop
 }
 
 function configtest() {
-    service php-fpm configtest
+    #service php-fpm configtest
     service nginx configtest
 }
 
